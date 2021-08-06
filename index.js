@@ -21,8 +21,8 @@ const new_db = new Client({
 
 
 old_db.connect()
-
-    .then (old_db.query("SELECT * FROM accounts"))
+    .then (console.log(`Connection Sucsessful`))
+    .then ( ()=> old_db.query("SELECT * FROM accounts"))
     .then(results => console.table(results.rows))
     .catch((e => console.log(e)))
     .finally(() => old_db.end )
