@@ -8,7 +8,7 @@ const old_db = new Client({
     host: `192.168.1.200`,
     port: 5432,
     database: `old`
-})
+});
 
 const new_db = new Client({
     user: `new`,
@@ -16,16 +16,15 @@ const new_db = new Client({
     host: '192.168.1.200',
     port: 5433,
     database: `new`
-})
+});
 
 
 
 old_db.connect()
-
-    .then (old_db.query("SELECT * FROM accounts"))
-    .then(results => console.table(results.rows))
-    .catch((e => console.log(e)))
-    .finally(() => old_db.end )
+.then (old_db.query("SELECT * FROM accounts WHERE name = 'Kaj';"))
+.then(results => console.table(results.rows))
+.catch((e => console.log(`eat it {e}`)))
+.finally(() => old_db.end )
 
 
 
