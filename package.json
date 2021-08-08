@@ -18,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/zb1ackcat/rate_bad_merge/issues"
   },
-  "homepage": "https://github.com/zb1ackcat/rate_bad_merge#readme"
+  "homepage": "https://github.com/zb1ackcat/rate_bad_merge#readme",
+  "dependencies": {
+    "pg": "^8.7.1"
+  }
 }
