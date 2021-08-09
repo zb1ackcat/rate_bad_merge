@@ -1,7 +1,7 @@
 {
   "name": "rate_bad_merge",
   "version": "1.0.0",
-  "description": "Simple app to identify currupt data from a bad merge.",
+  "description": "Simple app to identify corrupt data from a bad merge.",
   "main": "index.js",
   "scripts": {
     "test": "node ."
@@ -20,6 +20,14 @@
   },
   "homepage": "https://github.com/zb1ackcat/rate_bad_merge#readme",
   "dependencies": {
+    "download-csv": "^1.1.1",
+    "express": "^4.17.1",
+    "fast-csv": "^4.3.6",
+    "json2csv": "^5.0.6",
     "pg": "^8.7.1"
+  },
+  "devDependencies": {
+    "eslint": "^7.32.0",
+    "eslint-plugin-react": "^7.24.0"
   }
 }
